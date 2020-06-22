@@ -76,7 +76,9 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/fw876/helloworld package/helloworld 
+        git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
+        git clone https://github.com/kenzok8/small package/small
+        git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
 
     - name: Configuration Customization - Build_x86_64
       env:
